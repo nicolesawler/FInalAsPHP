@@ -1,12 +1,6 @@
 <?php
 	session_start();
 
-	// If user is not logged in, redirect to login page
-	if (!isset($_SESSION['user_id'])) {
-		header('Location: login.php');
-		exit();
-	}
-
 	// Include database connection code
 	require_once 'includes/db.php';
 
@@ -45,7 +39,7 @@
     <h1>$<?php echo $price; ?> CAD</h1>
 
     <div class="mb-3 ">
-        <img src="product_images/<?php echo $image; ?>" class="img-thumbnail" /><br>
+        <img src="product_images/<?php echo $image; ?>" class="img-thumbnail" style="max-width:500px;"/><br>
 	</div>
 
 		<div class="mb-3 ">
