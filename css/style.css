@@ -1,0 +1,47 @@
+img.candy {
+    width: 300px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+    object-fit: cover;
+}
+.jumbotron{
+    background: pink;
+    padding:25px;
+
+}
+h1{
+    margin:40px 0;
+    color: #759CE6;
+}
+.img{
+    max-width:100%;
+}
+.btn-primary{
+    background-color:#759CE6;
+}
+.jumbotron h1{
+    color:#011274;
+    font-weight:bold;
+}
+div.hidden
+{
+    visibility:hidden;
+}
+.mobile{
+    background:lightblue;
+    padding:20px;
+    text-align:center;
+    width:100%;
+    display:none;
+    }
+
+@media screen and (max-width:500px){
+    .mobile{
+        display:block;
+    }
+    table{
+        max-width:500px;
+    }
+    .items{
+        text-align:center;
+    }
+}
